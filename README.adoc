@@ -3,8 +3,8 @@
 
 This project is the Hawkular Datasource plugin for Grafana 3. It works with:
 
-* Metrics standalone servers as well
-* Hawkular servers, starting from version Alpha13
+* http://www.hawkular.org[Hawkular Services]
+* http://www.hawkular.org[Hawkular Metrics]
 
 == Installing
 
@@ -28,7 +28,7 @@ COMING SOON
 
 == Configuration
 
-The datasource URL must point to the Hawkular Metrics service, e.g. `http://myhost:8080/hawkular/metrics`
+The datasource URL must point to the Hawkular Metrics service, e.g. `http://localhost:8080/hawkular/metrics`
 
 `direct` access mode only works with standalone Metrics servers currently. If you active it, make sure to allow
 the Grafana server origin in Metrics' configuration.
@@ -38,6 +38,8 @@ Authentication must be set when working with a Hawkular server. Check the 'Basic
 Select the tenant. On Hawkular servers, use `hawkular`.
 
 Openshift-Metrics users must provide an authentication token.
+
+image::docs/img/configuration-hawkular-services.png[Configuration screen filled-in for Hawkular Services]
 
 == Building
 
